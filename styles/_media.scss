@@ -1,4 +1,5 @@
 //MAKES THE PAGE RESPONSIVE TO DIFFERENT SCREENS //find breakpoints with certain screens
+
 @media screen and (max-width: 600px){
     .about-container{
         grid-template-columns: repeat(1, 1fr);
@@ -79,11 +80,14 @@
 @media screen and (max-width: 1070px){ // media query for section
     .about-container{
         grid-template-columns: 1fr;
+        .left-about{
+            position: relative;
+            left: 4rem;
+        }
         .right-about{
             padding-top: 2.5rem;
         }
     }
-
     .portfolios{
         grid-template-columns: 1fr 1fr;
     }  //two compulumns
@@ -108,6 +112,10 @@
         padding-bottom: 6rem;
     }
     .left-header{ // moves text to the top
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right: 2rem;
         .h-shape{
             display:none;
         }
@@ -118,6 +126,16 @@
         margin: 0 auto; // THIS IS TO CENTER
         .name{
             font-size:2.5rem !important;
+            margin-top: 10px;
+            display:flex;
+            justify-content: center;
+            .spacing{
+                margin-left: 0.5rem;
+            }
+        }
+        .btn-container{
+            display:flex;
+            justify-content: center;
         }
     }
 
@@ -138,6 +156,7 @@
             margin: .4rem 1rem;
         }
     } 
+
 }
 
 @media screen and (max-width: 700px){

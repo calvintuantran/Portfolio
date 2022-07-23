@@ -951,6 +951,10 @@ section {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .about-container .left-about {
+    position: relative;
+    left: 4rem;
+  }
   .about-container .right-about {
     padding-top: 2.5rem;
   }
@@ -979,6 +983,16 @@ section {
         grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
+  .left-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    right: 2rem;
+  }
   .left-header .h-shape {
     display: none;
   }
@@ -990,6 +1004,24 @@ section {
   }
   .right-header .name {
     font-size: 2.5rem !important;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .right-header .name .spacing {
+    margin-left: 0.5rem;
+  }
+  .right-header .btn-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header-content .left-content .image {
     margin: 0 auto;
